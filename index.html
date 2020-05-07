@@ -58,7 +58,7 @@ display: inline-block;
       </li>
       
       <li class="nav-item">
-        <a class="nav-link" href="#">Contacto</a>
+        <a class="nav-link" data-toggle="modal" data-target="#exampleModal2" href="#">Contacto</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -193,23 +193,23 @@ display: inline-block;
 <div class="input-group mb-3">
   <div class="input-group-prepend">
   
-    <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+    <span class="input-group-text" id="basic-addon1"><i class="fa fa-home"></i></span>
   </div>
-  <input type="text" class="form-control" placeholder=">v 17 N 3-35" aria-label="Username" aria-describedby="basic-addon1">
+  <input type="text" class="form-control" placeholder="Av 17 N 3-35" aria-label="Username" aria-describedby="basic-addon1">
 </div>
 <h6>Email</h6>
 <div class="input-group mb-3">
   <div class="input-group-prepend">
     
-    <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+    <span class="input-group-text" id="basic-addon1"><i class="fa fa-envelope"></i></span>
   </div>
-  <input type="Email" class="form-control" placeholder="Correo Electrónico" aria-label="Username" aria-describedby="basic-addon1">
+  <input type="email" class="form-control" placeholder="Correo Electrónico" aria-label="Username" aria-describedby="basic-addon1">
 </div>
 <h6>Telefono</h6>
 <div class="input-group mb-3">
   <div class="input-group-prepend">
     
-    <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+    <span class="input-group-text" id="basic-addon1"><i class="fa fa-phone"></i></span>
   </div>
   <input type="text" class="form-control" placeholder="3157876185" aria-label="Username" aria-describedby="basic-addon1">
 </div>
@@ -217,15 +217,66 @@ display: inline-block;
 <div class="input-group mb-3">
   <div class="input-group-prepend">
     
-    <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+    <span class="input-group-text" id="basic-addon1"><i class="fa fa-lock"></i></span>
   </div>
   <input type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
   <input type="password" class="form-control" placeholder="Confirmación" aria-label="Username" aria-describedby="basic-addon1">
+ 
 </div>
+ <h6 id="min">Mínimo 6 Caracteres</h6>
       </div>
-      <div class="modal-footer text-left">
+      <div id="boton" class="modal-footer text-left">
         
-        <button type="button" class="btn btn-primary">Registrarse</button>
+        <input type="submit" value="Registrarse" class="btn btn-primary" data-dismiss="modal" />
+      </div>
+    </div>
+  </div>
+</div>
+
+ <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contacto de Clientes</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="alert alert-primary alert-dismissible fade show text-left" role="alert">
+  <strong>Info!</strong> Si tienes alguna pregunta no dudes en contactarnos. Estaremos atentos a responder cualquier inquietud que tengas.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+        <h6>Nombre Completo</h6>
+        <div class="input-group mb-3">
+
+  <div class="input-group-prepend">
+    
+    <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+  </div>
+  <input type="text" class="form-control" placeholder="Nombres Apellidos" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+<h6>Email</h6>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    
+    <span class="input-group-text" id="basic-addon1"><i class="fa fa-envelope"></i></span>
+  </div>
+  <input type="email" class="form-control" placeholder="Correo Electrónico" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+<h6>Mensaje</h6>
+<div class="input-group">
+
+  <textarea class="form-control" aria-label="With textarea"></textarea>
+</div>
+
+ 
+      </div>
+      <div id="boton" class="modal-footer text-left">
+        
+        <input type="submit" value="Registrarse" class="btn btn-primary" data-dismiss="modal" />
       </div>
     </div>
   </div>
@@ -406,39 +457,8 @@ display: inline-block;
   </div>
 </div>-->
 <script type="text/javascript">
-  $('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
-$('.modal').fadeOut();
-  $('#abrir_modal').click(function(e){
-e.preventDefault();
-$('.modal').fadeIn();
-  });
-function closeModal(){
-  $('.modal').fadeOut();
- 
-}
-function closeModal2(){
-  var mensaje=document.getElementById("cuerpo_mensaje").value;
-  if(mensaje==""){
-            document.getElementById("cuerpo_mensaje").focus();
-                alertify.alert("Advertencia!","No puede ir Vacío el Mensaje");               
-                return false;
-            }else{
-  toastr.options = {
-  "debug": false,
-  "positionClass": "toast-bottom-right",
-  "onclick": null,
-  "fadeIn": 400,
-  "fadeOut": 150,
-  "timeOut": 1500,
-  "extendedTimeOut": 1500
-}
-  $('.modal').fadeOut();
-  toastr.success('Tu Mensaje se Envió Exitosamente', 'Mensaje Enviado');
-setTimeout( function(){document.form_add_product.submit();} ,1200 );  
-}
-}
+  
+
 </script>
  <script src="js/indexjs.js"></script>
 </body>

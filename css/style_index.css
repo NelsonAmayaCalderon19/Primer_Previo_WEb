@@ -55,6 +55,20 @@
   background-color: #fff;
   display: block;
 }
+h6{
+	text-align: left;
+}
+#min{
+color: #6F777C;
+}
+#boton{
+	text-align: left;
+	align-items: left;
+	align-content: left;
+}
+#tex_area{
+	width: 100%;
+}
 
 
 
