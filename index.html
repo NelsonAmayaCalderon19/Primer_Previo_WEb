@@ -117,8 +117,8 @@ display: inline-block;
         <p class="card-text"><label id="desayuno">Desayuno Sorpresa</label><br>Desayunos Sorpresa<br>Espectacular Detalle<br>
         Incluye: $50.000</p>
         <p class="card-text text-right">
-        <a href="#" class="btn btn-primary">Añadir al Carrito</a>
-        <a href="#" class="btn bt-success">Más >></a>
+        <a data-toggle="modal" data-target="#exampleModal3"  href="#" class="btn btn-primary">Añadir al Carrito</a>
+        <a  href="#" class="btn bt-success">Más >></a>
       </p>
       </div>
     </div>
@@ -130,8 +130,8 @@ display: inline-block;
         <p class="card-text"><label id="desayuno">Desayuno Sorpresa</label><br>Desayunos Sorpresa<br>Espectacular Detalle<br>
         Incluye: $50.000</p>
         <p class="card-text text-right">
-        <a href="#" class="btn btn-primary">Añadir al Carrito</a>
-        <a href="#" class="btn bt-success">Más >></a>
+        <a data-toggle="modal" data-target="#exampleModal3"  href="#" class="btn btn-primary">Añadir al Carrito</a>
+        <a  href="#" class="btn bt-success">Más >></a>
       </p>
       </div>
     </div>
@@ -143,7 +143,7 @@ display: inline-block;
         <p class="card-text"><label id="desayuno">Desayuno Sorpresa</label><br>Desayunos Sorpresa<br>Espectacular Detalle<br>
         Incluye: $50.000</p>
         <p class="card-text text-right">
-        <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+        <a data-toggle="modal" data-target="#exampleModal3"  href="#" class="btn btn-primary">Añadir al Carrito</a>
         <a href="#" class="btn bt-success">Más >></a>
       </p>
       </div>
@@ -156,7 +156,7 @@ display: inline-block;
         <p class="card-text"><label id="desayuno">Desayuno Sorpresa</label><br>Desayunos Sorpresa<br>Espectacular Detalle<br>
         Incluye: $50.000</p>
         <p class="card-text text-right">
-        <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+        <a data-toggle="modal" data-target="#exampleModal3"  href="#" class="btn btn-primary">Añadir al Carrito</a>
         <a href="#" class="btn bt-success">Más >></a>
       </p>
       </div>
@@ -169,7 +169,7 @@ display: inline-block;
         <p class="card-text"><label id="desayuno">Desayuno Sorpresa</label><br>Desayunos Sorpresa<br>Espectacular Detalle<br>
         Incluye: $50.000</p>
         <p class="card-text text-right">
-        <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+        <a data-toggle="modal" data-target="#exampleModal3"  href="#" class="btn btn-primary">Añadir al Carrito</a>
         <a href="#" class="btn bt-success">Más >></a>
       </p>
       </div>
@@ -182,7 +182,7 @@ display: inline-block;
         <p class="card-text"><label id="desayuno">Desayuno Sorpresa</label><br>Desayunos Sorpresa<br>Espectacular Detalle<br>
         Incluye: $50.000</p>
         <p class="card-text text-right">
-        <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+        <a data-toggle="modal" data-target="#exampleModal3"  href="#" class="btn btn-primary">Añadir al Carrito</a>
         <a href="#" class="btn bt-success">Más >></a>
       </p>
       </div>
@@ -195,7 +195,7 @@ display: inline-block;
         <p class="card-text"><label id="desayuno">Desayuno Sorpresa</label><br>Desayunos Sorpresa<br>Espectacular Detalle<br>
         Incluye: $50.000</p>
         <p class="card-text text-right">
-        <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+        <a data-toggle="modal" data-target="#exampleModal3"  href="#" class="btn btn-primary">Añadir al Carrito</a>
         <a href="#" class="btn bt-success">Más >></a>
       </p>
       </div>
@@ -208,7 +208,7 @@ display: inline-block;
         <p class="card-text"><label id="desayuno">Desayuno Sorpresa</label><br>Desayunos Sorpresa<br>Espectacular Detalle<br>
         Incluye: $50.000</p>
         <p class="card-text text-right">
-        <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+        <a data-toggle="modal" data-target="#exampleModal3"  href="#" class="btn btn-primary">Añadir al Carrito</a>
         <a href="#" class="btn bt-success">Más >></a>
       </p>
       </div>
@@ -239,7 +239,7 @@ display: inline-block;
     
     <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
   </div>
-  <input type="text" class="form-control" placeholder="Nombres Apellidos" aria-label="Username" aria-describedby="basic-addon1">
+  <input type="text" class="form-control" id="completo" placeholder="Nombres Apellidos" aria-label="Username" aria-describedby="basic-addon1">
 </div>
 <h6>Dirección</h6>
 <div class="input-group mb-3">
@@ -247,23 +247,23 @@ display: inline-block;
   
     <span class="input-group-text" id="basic-addon1"><i class="fa fa-home"></i></span>
   </div>
-  <input type="text" class="form-control" placeholder="Av 17 N 3-35" aria-label="Username" aria-describedby="basic-addon1">
+  <input type="text" class="form-control" id="dir" placeholder="Av 17 N 3-35" aria-label="Username" aria-describedby="basic-addon1">
 </div>
 <h6>Email</h6>
 <div class="input-group mb-3">
   <div class="input-group-prepend">
     
-    <span class="input-group-text" id="basic-addon1"><i class="fa fa-envelope"></i></span>
+    <span class="input-group-text"  id="basic-addon1"><i class="fa fa-envelope"></i></span>
   </div>
-  <input type="email" class="form-control" placeholder="Correo Electrónico" aria-label="Username" aria-describedby="basic-addon1">
+  <input type="email" id="email" class="form-control" placeholder="Correo Electrónico" aria-label="Username" aria-describedby="basic-addon1">
 </div>
 <h6>Telefono</h6>
 <div class="input-group mb-3">
   <div class="input-group-prepend">
     
-    <span class="input-group-text" id="basic-addon1"><i class="fa fa-phone"></i></span>
+    <span class="input-group-text"  id="basic-addon1"><i class="fa fa-phone"></i></span>
   </div>
-  <input type="text" class="form-control" placeholder="3157876185" aria-label="Username" aria-describedby="basic-addon1">
+  <input type="text" id="tel" class="form-control" placeholder="3157876185" aria-label="Username" aria-describedby="basic-addon1">
 </div>
 <h6>Password</h6>
 <div class="input-group mb-3">
@@ -271,15 +271,15 @@ display: inline-block;
     
     <span class="input-group-text" id="basic-addon1"><i class="fa fa-lock"></i></span>
   </div>
-  <input type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
-  <input type="password" class="form-control" placeholder="Confirmación" aria-label="Username" aria-describedby="basic-addon1">
+  <input type="password" id="pass1"  class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+  <input type="password" id="pass2"  class="form-control" placeholder="Confirmación" aria-label="Username" aria-describedby="basic-addon1">
  
 </div>
  <h6 id="min">Mínimo 6 Caracteres</h6>
       </div>
       <div id="boton" class="modal-footer text-left">
         
-        <input type="submit" value="Registrarse" class="btn btn-primary" data-dismiss="modal" />
+        <input type="submit" value="Registrarse" id="registrar" class="btn btn-primary" data-dismiss="modal" />
       </div>
     </div>
   </div>
@@ -334,10 +334,37 @@ display: inline-block;
   </div>
 </div>
 
-<script type="text/javascript">
-  
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detalles del Producto</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body col-12" id="cuerpo">
+        <div class="col-sm-6">
+          <img id="img_detalle" src="imagen/alcanciabuena.png">
+        </div>
+        <div class="col-sm-6">
+         <p>
+           Nombre: Desayuno Sorpresa<br>
+           Espectacular Detalle, Incluye:<br>
+           Delicioso Cupcake decorado<br>
+         </p>
+        </div>
+ 
+      </div>
+      <div id="boton" class="modal-footer text-left">
+        
+        <input type="submit" value="Contactar" id="contactar" class="btn btn-primary" data-dismiss="modal" />
+      </div>
+    </div>
+  </div>
+</div>
 
-</script>
+
  <script src="js/indexjs.js"></script>
 </body>
 </html>
