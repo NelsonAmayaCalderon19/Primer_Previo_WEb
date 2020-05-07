@@ -8,10 +8,10 @@
 	width:100%;
 }
 #carouselExampleIndicators{
-	height: 300px;
+	height: 350px;
 }
 #img{
-	height: 300px;
+	height: 350px;
 }
 #list{
 
@@ -82,7 +82,14 @@ color: #6F777C;
 #titulo{
 	color: white;
 	font-family: arial;
+	font-size: 40px;
+}
+#titulo2{
+	margin-top: 10px;
+	color: #05ACD5;
+	font-family: arial;
 	font-size: 25px;
+	margin-bottom: 10px;
 }
 #img_footer{
 	height: 100px;
@@ -94,9 +101,32 @@ border-radius: 100px;
   transform: scale(1.3);
   cursor: pointer;
 }
+#img_footer2{
+	height: 150px;
+	width: 80%;
+border-radius: 150px;
+  transition: transform 0.5s;
+
+}
+#img_footer2:hover{
+  transform: scale(1.4);
+  cursor: pointer;
+}
 #mensajito{
 	color: white;
 	font-size: 17px;
+	width: 40%;
+	margin: 0px auto;
+}
+#mensajito2{
+	color: black;
+	font-size: 15px;
+
+}
+#contenido{
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
 

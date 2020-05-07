@@ -57,14 +57,20 @@ var porId=document.getElementById("email").value;
                 alert("Debes Ingresar la Password");               
                 return false;
             }
+            
             else if($('#pass2').val()==""){
               document.getElementById("pass2").focus();
                 alert("Debes Confirmar la password");               
                 return false;
             }
-            else if($('#pass1').val()!=$('#pass2').val()){
-               document.getElementById("pass1").focus();
-                alert("Las Contraeñas no Coinciden");               
+            else if($('#pass1').val().length < 6){
+              document.getElementById("pass1").focus();
+                alert("La password debe tener minimo 6 Caracteres");               
+                return false;
+            }
+            else if($('#pass2').val().length < 6){
+              document.getElementById("pass2").focus();
+                alert("La password debe tener minimo 6 Caracteres");               
                 return false;
             }
 });
