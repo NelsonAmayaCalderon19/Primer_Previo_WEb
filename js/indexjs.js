@@ -57,7 +57,7 @@ var porId=document.getElementById("email").value;
                 alert("Debes Ingresar la Password");               
                 return false;
             }
-            
+  
             else if($('#pass2').val()==""){
               document.getElementById("pass2").focus();
                 alert("Debes Confirmar la password");               
