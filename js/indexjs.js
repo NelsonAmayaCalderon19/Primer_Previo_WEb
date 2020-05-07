@@ -68,4 +68,7 @@ var porId=document.getElementById("email").value;
                 return false;
             }
 });
+        $('#vermas5').click(function(){
+document.getElementById("campo").style.display="block";
+        });
     });

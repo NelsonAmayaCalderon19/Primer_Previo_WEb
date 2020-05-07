@@ -72,6 +72,11 @@ color: #6F777C;
 #cuerpo{
 	display: flex;
 }
+.icon{
+	color: #ECA739;
+	margin-right: 3px;
+}
+
 
 
 
