@@ -1,0 +1,95 @@
+*{
+		margin: 0;
+		padding: 0;
+	}
+#header{
+	display: flex;
+	background-color: blue;
+	width:100%;
+}
+#carouselExampleIndicators{
+	height: 300px;
+}
+#img{
+	height: 300px;
+}
+#list{
+
+	color: gray;
+	font-family: times new roman;
+	font-size: 26px;
+}
+.listado{
+	border-bottom: 1px solid gray;
+}
+#img_obs{
+	height: 100px;
+}
+#desayuno{
+	color: #1D98F1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*@media ( ancho mínimo : 601 px ) y ( ancho máximo : 1000 px ) {
+				cuerpo {
+					Familia tipográfica: Arialñ , sans-serif;
+				}
+				a un lado {
+					flotador : izquierda;
+					ancho : 40 % ;
+					claro : ambos;
+				}
+				sección {
+					flotador : izquierda;
+					ancho : 60 % ;
+				}
+				# formacion {
+					ancho : 100 % ;
+				}
+				# experiencia {
+					ancho : 100 % ;
+				}
+			}
+			@media ( ancho máximo : 600 px ) {
+				
+				a un lado {
+		
+					ancho : 100 % ;
+					claro : ambos;
+				}
+				sección {
+				
+					ancho : 100 % ;
+				}
+				# formacion {
+					ancho : 100 % ;
+				}
+				# experiencia {
+					ancho : 100 % ;
+				}
+			}*/
